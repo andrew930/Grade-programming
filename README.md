@@ -1,4 +1,4 @@
-<img width="1138" height="524" alt="image" src="https://github.com/user-attachments/assets/c7ba93e9-f8c1-48a7-9fc4-16a03a87ea48" /><img width="944" height="778" alt="581935248_840850085079350_5660307965909463068_n" src="https://github.com/user-attachments/assets/0d428825-6275-41d0-ba1b-7e9ce31c8b3a" />
+<img width="944" height="778" alt="581935248_840850085079350_5660307965909463068_n" src="https://github.com/user-attachments/assets/0d428825-6275-41d0-ba1b-7e9ce31c8b3a" />
 
 
 if(yung choice is LAB) {
