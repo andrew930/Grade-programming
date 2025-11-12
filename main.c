@@ -11,26 +11,29 @@ int main(){
     printf("Enter name here: ");
         fgets(name, sizeof(name), stdin);
     printf("Enter here ID number: ");
-        scanf("%s", &ID);
+        scanf("%s", ID);
     printf("Enter here subject: ");
-        scanf("%s", &subject);
+        scanf("%s", subject);
     printf("\nName: %sID: %s \nSubject: %s", name, ID, subject);
 
     float quiz, assignment, exam, total;
+
     if(strcmp(subject, "math")==0){
         printf("\nInput here quiz score: ");
             scanf("%f", &quiz);
-        printf("Input here assignment score: ");
+        printf("\nInput here assignment score: ");
             scanf("%f", &assignment);
-        printf("Input here exam score: ");
+        printf("\nInput here exam score: ");
             scanf("%f", &exam); 
         //placeholder calculation
 
         total = quiz + assignment + exam;
         printf("Total scores: %.2f", total);
-        fprintf(pF,"\nName: %sID: %s \nSubject: %s", name, ID, subject);
-        fprintf(pF, "\nTotal scores: %f", total);
-        fclose(pF);
-        return 0;
     }
+    fprintf(pF,"\nName: %sID: %s \nSubject: %s", name, ID, subject); //might move this if mid and finals lec and lab are added.
+    fprintf(pF, "\nTotal scores: %f", total);
+    fclose(pF);
+    printf("\n ");
+    system("pause");
+    return 0;
 }
