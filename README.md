@@ -12,3 +12,5 @@ execute and calculate grades and scores of midterm examinations, class participa
 }
 di ko alam kung may sense to.
 based on this picture: <img width="1138" height="524" alt="image" src="https://github.com/user-attachments/assets/f9a3a374-53c0-4b95-aaab-32b70d0e20ce" />
+
+siguro dapat if kung pede gamitin to sa ibang sub pwedeng iinput sariling percentage of grade.
