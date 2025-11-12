@@ -1,41 +1,36 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-int main() {
-    char choice[50];
-    printf("Choose between the two:\n");
-    printf("1.) Midterm exam score calc\n");
-    printf("2.) Midterm grade calc\n");
-    printf("Enter number of the choice: ");
-    scanf("%s", &choice);
+int main(){
+    char name[50];
+    char ID[50];
+    char subject[50];
+//storing info into info.txt
+    FILE *pF = fopen("info.txt", "a");
+    printf("Enter name here: ");
+        fgets(name, sizeof(name), stdin);
+    printf("Enter here ID number: ");
+        scanf("%s", &ID);
+    printf("Enter here subject: ");
+        scanf("%s", &subject);
+    printf("\nName: %sID: %s \nSubject: %s", name, ID, subject);
 
-    int i;
-    float mid_score, mid_overall, mid_percentage, mid_result;
-    float scores, overalls, total=0; 
-    if(strcmp(choice, "1")==0){
-    printf("Enter your midterm score: ");
-    scanf("%f", &mid_score);
-    
-    printf("Enter the overall items: ");
-    scanf("%f", &mid_overall);
-    
-    if (mid_overall>0) {
-        mid_percentage = (mid_score / mid_overall)*100;
-        mid_result = (mid_percentage*30)/100;
-        printf("Your Midterm Exam Percentage is: %.2f%%\n", mid_result);
+    float quiz, assignment, exam, total;
+    if(strcmp(subject, "math")==0){
+        printf("\nInput here quiz score: ");
+            scanf("%f", &quiz);
+        printf("Input here assignment score: ");
+            scanf("%f", &assignment);
+        printf("Input here exam score: ");
+            scanf("%f", &exam); 
+        //placeholder calculation
+
+        total = quiz + assignment + exam;
+        printf("Total scores: %.2f", total);
+        fprintf(pF,"\nName: %sID: %s \nSubject: %s", name, ID, subject);
+        fprintf(pF, "\nTotal scores: %f", total);
+        fclose(pF);
+        return 0;
     }
-    else {
-        printf("ERROR\n");
-    }
-    for (i = 1; i <= 5; i++);
-    printf("Enter your scores %d: ", i);
-    scanf("%f", &scores);
-    
-    printf("Enter all the overall items: ");
-    scanf("%f", &overalls);
-    
-    printf("%f", &scores);
-}
-    
-    return 0;
 }
