@@ -1,0 +1,48 @@
+
+Name: Andrew E. Valencia
+ID: 202510701 
+Subject: 1
+Midterm Grade: 92.00%
+Status: PASSED
+
+Name: Andrew E. Valencia
+ID: 202510701 
+Subject: 1PASSED
+Midterm Grade: 100.00%
+Status: PASSED
+
+Name: Andrew E. Valnec
+ID: 213123 
+Subject: 1PASSED
+Midterm Grade: 92.00%
+Status: PASSED
+
+Name: andrew
+ID: 213123 
+Subject: MIDLEC
+Midterm Grade: 92.00%
+Status: PASSED
+
+Name: Andrew E. Valencia
+ID: 202510701 
+Subject: MIDLEC
+Midterm Grade: 100.00%
+Status: PASSED
+
+Name: test
+ID: 123 
+Subject: MIDLEC
+Midterm Grade: 92.00%
+Status: PASSED
+
+Name: Andrew E.
+ID: 123123 
+Subject: MIDTERMS
+Midterm Grade: 92.00%
+Status: PASSED
+
+Name: Andrew E. Valencia
+ID: 202510701 
+Subject: MIDTERMS
+Midterm Grade: 92.00%
+Status: PASSED

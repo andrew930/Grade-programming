@@ -1,39 +1,44 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "midterm.h"
 
 int main(){
     char name[50];
-    char ID[50];
-    char subject[50];
-//storing info into info.txt
+    char ID[10];
+    char choice[2];
+    char subjects[2][10] = {"MIDTERMS", "FINALS"};
+
+    float final_grade = 0.0f;
+    char status[15];
+
     FILE *pF = fopen("info.txt", "a");
-    printf("Enter name here: ");
+    printf("========================================================================================================================");
+    printf("\nGrade Calculator for CCS");
+    printf("\nEnter name here: ");
         fgets(name, sizeof(name), stdin);
-    printf("Enter here ID number: ");
+    printf("\nEnter here ID number: ");
         scanf("%s", ID);
-    printf("Enter here subject: ");
-        scanf("%s", subject);
-    printf("\nName: %sID: %s \nSubject: %s", name, ID, subject);
+    printf("\nSelect subject calculation from the selection:");
+    printf("\n1.) %s", subjects[0]);
+    printf("\n2.) %s", subjects[1]);
+    printf("\nChoose by number 1 or 2: ");
+        scanf("%s", choice);
+    printf("\nName: %sID: %s \nSubject: %s", name, ID, subjects);
 
-    float quiz, assignment, exam, total;
+    if(strcmp(choice, "1")==0){
+        final_grade = midterm();
 
-    if(strcmp(subject, "math")==0){
-        printf("\nInput here quiz score: ");
-            scanf("%f", &quiz);
-        printf("\nInput here assignment score: ");
-            scanf("%f", &assignment);
-        printf("\nInput here exam score: ");
-            scanf("%f", &exam); 
-        //placeholder calculation
-
-        total = quiz + assignment + exam;
-        printf("Total scores: %.2f", total);
+         if (final_grade >= 75) {
+            strcpy(status, "PASSED");
+        } else {
+            strcpy(status, "FAILED");
+        }
     }
-    fprintf(pF,"\nName: %sID: %s \nSubject: %s", name, ID, subject); //might move this if mid and finals lec and lab are added.
-    fprintf(pF, "\nTotal scores: %f", total);
+    fprintf(pF,"\nName: %sID: %s \nSubject: %s", name, ID, subjects);
+    fprintf(pF, "\nTotal grade: %.2f%%", final_grade);
+    fprintf(pF, "\nSTATUS: %s\n", status);
     fclose(pF);
     printf("\n ");
     system("pause");
-    return 0;
 }
