@@ -1,18 +1,11 @@
 // INITIAL CODING / NO STARTER / NO RECITATION / LAB UNCHECKED / NO ENDING
 #include <stdio.h>
+#include "gradelib.h"
 
-float calculate_midexam_grade();
-float calculate_parti_grade();
-float calculate_pt_grade();
-float calculate_ww_grade();
-float calculate_proj_grade();
-float calculate_prob_grade();
-float calculate_lab_pt_grade();
-
-float midterm() {
+float midterm(FILE *pF) {
     float total_lec_grade = 0, total_lab_grade = 0, total_midterm_grade = 0, midexam_grade, parti_grade, pt_grade, ww_grade, proj_grade, prob_grade, lab_pt_grade;
 
-    printf("Midterm Term (LEC) Calculation\n");
+    printf("\nMidterm Term (LEC) Calculation\n");
 
     midexam_grade = calculate_midexam_grade();
     parti_grade = calculate_parti_grade();
@@ -47,6 +40,30 @@ float midterm() {
     } 
     else { 
         printf("\nFAILED\n");
+    }
+
+    if (pF != NULL) {
+        fprintf(pF, "\nMidterm Term (LEC) Results\n");
+        fprintf(pF, "Midterm Examinations (30%%): %.2f%%\n", midexam_grade);
+        fprintf(pF, "Class Participations (20%%): %.2f%%\n", parti_grade);
+        fprintf(pF, "Performance Task (30%%): %.2f%%\n", pt_grade);
+        fprintf(pF, "Written Works (20%%): %.2f%%\n", ww_grade);
+        fprintf(pF, "Midterm (LEC) Grade: %.2f%%\n", total_lec_grade);
+        
+        fprintf(pF, "\nMidterm Term (LAB) Results\n");
+        fprintf(pF, "Midterm Project (30%%): %.2f%%\n", proj_grade);
+        fprintf(pF, "Midterm Problems (30%%): %.2f%%\n", prob_grade);
+        fprintf(pF, "Midterm Performance Task (40%%): %.2f%%\n", lab_pt_grade);
+        fprintf(pF, "Midterm (LAB) Grade: %.2f%%\n", total_lab_grade);
+        
+        fprintf(pF, "\nMIDTERM GRADE\n");
+        fprintf(pF, "Midterm Grade (MG) = %.2f%%\n", total_midterm_grade);
+        
+        if (total_midterm_grade >= 75) {
+            fprintf(pF, "\nPASSED\n");
+        } else { 
+            fprintf(pF, "\nFAILED\n");
+        }
     }
     
     return total_midterm_grade;
