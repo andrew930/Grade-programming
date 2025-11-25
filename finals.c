@@ -98,7 +98,7 @@ float calculate_fparti_grade() {
     float facad_days, fabsence, fparti_percentage, fparti_result = 0;
     
     printf("\nCLASS PARTICIPATIONS CALCULATION\n");
-    printf("Academic days in total this midterm: ");
+    printf("Academic days in total this finals: ");
     scanf("%f", &facad_days);
     
     printf("Days you were absent: ");
@@ -187,7 +187,7 @@ float calculate_fww_grade() {
     
     return final_wwgrade;
 }
-//MIDTERM LAB
+//FINALS LAB
 
 float calculate_fproj_grade() {
      int num_fproj, i;
