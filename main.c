@@ -35,7 +35,6 @@ int main(){
     char subjects[2][8] = {"Midterm", "Finals"};
     float midterm_grade = 0.0f;
     float finals_grade = 0.0f;
-    char status[15];
     printf("  _____   _____   _____ \n");
     printf(" / ____| / ____| / ____| \n");
     printf("| |     | |     | (___   \n");
@@ -60,7 +59,7 @@ int main(){
         if(strlen(name) == 0) {
             printf("\nName cannot be empty!\n");
         } else if(!is_valid_name(name)) {
-            printf("\nInvalid name! Only letters and spaces are allowed!");
+            printf("\nInvalid name! Only letters and spaces are allowed!/n");
         } else {
             break;
         }
