@@ -19,7 +19,7 @@ float finals(FILE *pF) {
     total_flab_grade = fproj_grade + fprob_grade + flab_pt_grade;
     total_finterm_grade = (total_flec_grade*40)/100 + (total_flab_grade*60)/100;
 
-    printf("\nFinal Term Term (LEC) Results\n");
+    printf("\nFinal Term (LEC) Results\n");
     printf("Final Term Examinations (30%): %.2f%%\n", finexam_grade);
     printf("Class Participations (20%): %.2f%%\n", fparti_grade);
     printf("Performance Task (30%): %.2f%%\n", fpt_grade);
