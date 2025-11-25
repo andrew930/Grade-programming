@@ -59,7 +59,7 @@ int main(){
         if(strlen(name) == 0) {
             printf("\nName cannot be empty!\n");
         } else if(!is_valid_name(name)) {
-            printf("\nInvalid name! Only letters and spaces are allowed!/n");
+            printf("\nInvalid name! Only letters and spaces are allowed!\n");
         } else {
             break;
         }
