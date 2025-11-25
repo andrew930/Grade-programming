@@ -43,7 +43,7 @@ float finals(FILE *pF) {
     }
 
     if(pF != NULL) {
-    fprintf(pF, "\nFinal Term Term (LEC) Results\n");
+    fprintf(pF, "\nFinal Term (LEC) Results\n");
     fprintf(pF, "Final Term Examinations (30%): %.2f%%\n", finexam_grade);
     fprintf(pF, "Class Participations (20%): %.2f%%\n", fparti_grade);
     fprintf(pF, "Performance Task (30%): %.2f%%\n", fpt_grade);
