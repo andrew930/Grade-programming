@@ -60,9 +60,11 @@ float midterm(FILE *pF) {
         fprintf(pF, "Midterm Grade (MG) = %.2f%%\n", total_midterm_grade);
         
         if (total_midterm_grade >= 75) {
-            fprintf(pF, "\nPASSED\n");
+            fprintf(pF, "\nStatus: PASSED\n");
+            fprintf(pF, "=======================================================\n");
         } else { 
-            fprintf(pF, "\nFAILED\n");
+            fprintf(pF, "\nStatus: FAILED\n");
+            fprintf(pF, "=======================================================\n");
         }
     }
     

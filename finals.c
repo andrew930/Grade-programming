@@ -60,10 +60,12 @@ float finals(FILE *pF) {
     fprintf(pF, "Final Term Grade (MG) = %.2f%%\n", total_finterm_grade);
     
     if (total_finterm_grade >= 75) {
-        fprintf(pF, "\nPASSED\n");
+        fprintf(pF, "\nStatus: PASSED\n");
+        fprintf(pF, "=======================================================\n");
     } 
     else { 
-        fprintf(pF, "\nFAILED\n");
+        fprintf(pF, "\nStatus: FAILED\n");
+        fprintf(pF, "=======================================================\n");
     }
     }
     
