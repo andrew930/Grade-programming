@@ -5,7 +5,7 @@
 float finals(FILE *pF) {
     float total_flec_grade = 0, total_flab_grade = 0, total_finterm_grade = 0, finexam_grade, fparti_grade, fpt_grade, fww_grade, fproj_grade, fprob_grade, flab_pt_grade;
 
-    printf("Final Term (LEC) Calculation\n");
+    printf("\nFinal Term (LEC) Calculation\n");
 
     finexam_grade = calculate_finexam_grade();
     fparti_grade = calculate_fparti_grade();

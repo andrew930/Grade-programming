@@ -1,23 +1,23 @@
 =======================================================
-Name: Andrew E. Valencia
-ID: 202510701
-Choice: Finals
+Name: tester
+ID: 123456789
+Choice: Midterm
 
-Final Term Term (LEC) Results
-Final Term Examinations (30): 30.00%
-Class Participations (20): 0.00%
-Performance Task (30): 30.00%
-Written Works (20): 20.00%
-Final Term (LEC) Grade: 80.00%
+Midterm Term (LEC) Results
+Midterm Examinations (30%): 30.00%
+Class Participations (20%): 0.00%
+Performance Task (30%): 30.00%
+Written Works (20%): 20.00%
+Midterm (LEC) Grade: 80.00%
 
-Final Term (LAB) Results
-Final Term Project (30): 30.00%
-Final Term Problems (30): 30.00%
-Final Term Performance Task (40): 40.00%
-Final Term (LAB) Grade: 100.00%
+Midterm Term (LAB) Results
+Midterm Project (30%): 30.00%
+Midterm Problems (30%): 30.00%
+Midterm Performance Task (40%): 40.00%
+Midterm (LAB) Grade: 100.00%
 
-FINAL TERM GRADE
-Final Term Grade (MG) = 92.00%
+MIDTERM GRADE
+Midterm Grade (MG) = 92.00%
 
 Status: PASSED
 =======================================================

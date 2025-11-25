@@ -130,7 +130,9 @@ int main(){
         fclose(pF);
     }
     
-    printf("What would you like to do?\n");
+    printf("\n*******************************\n");
+    printf("* What would you like to do? *\n");
+    printf("*******************************\n");
     printf("1. Enter another student's grade\n");
     printf("2. Exit the program\n");
 
